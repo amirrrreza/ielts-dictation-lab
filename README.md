@@ -13,18 +13,18 @@ player stops after a few words so you can type what you heard before moving on.
 4. If the browser does not open, visit [127.0.0.1:8765](http://127.0.0.1:8765/).
    Keep the Terminal window open during practice.
 
-The first launch downloads Python dependencies. The first transcription in
-each language downloads its speech model. Both are saved in Application
-Support so they can be reused.
+## Start the app on Windows
 
-To run the server directly from the project folder:
+1. Install Python 3.12 with the Windows Python launcher. Check that
+   `py -3.12 --version` works in Command Prompt.
+2. Download and unzip the source, or clone the repository.
+3. Double-click **Start IELTS Dictation Lab.cmd**.
+4. Open [127.0.0.1:8765](http://127.0.0.1:8765/) in your browser. Keep the
+   Command Prompt window open during practice.
 
-```sh
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python guided_server.py
-```
+On both systems, the first launch downloads Python dependencies and the first
+transcription in each language downloads its speech model. The launcher stores
+them in Application Support on macOS or Local AppData on Windows.
 
 ## Practise with a recording
 
